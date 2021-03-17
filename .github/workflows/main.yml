@@ -12,6 +12,6 @@ jobs:
     - name: 📂 Sync files
       uses: SamKirkland/FTP-Deploy-Action@4.0.0
       with:
-        server: ${{ secrets.SERVER }}
+        server: ftp://148.66.138.145/dev_37
         username: ${{ secrets.USERNAME }}
         password: ${{ secrets.PASSWORD }}
