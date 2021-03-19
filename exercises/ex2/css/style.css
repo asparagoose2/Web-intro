@@ -77,7 +77,7 @@ nav a:hover {
     left: 90px;
     top: 196px;
 
-    background: url(.jpg), #C4C4C4;
+    background: #C4C4C4;
     border-radius: 15px;
 }
 
@@ -341,13 +341,10 @@ footer {
     background: #ED4C5C;
 }
 
-footer a {
-    width: 33%;
-}
-
 .appLinks {
     position: absolute;
     display:flex;
+    justify-content: space-between;
     width: 134px;
     height: 32px;
     left: 50px;
