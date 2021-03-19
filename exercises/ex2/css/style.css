@@ -1,0 +1,371 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    
+}
+
+.titleNav {
+    position: absolute;
+    width: 1440px;
+    height: 657px;
+    background-color:  #ED4C5C;
+}
+
+#logoImg {
+    width: 40px;
+}
+
+header {
+    position: absolute;
+    width: 188px;
+    height: 29px;
+    left: 51px;
+    top: 55px;   
+}
+
+header a {
+    font-family: Lato;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 22px;
+    /* identical to box height */
+
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+
+    text-decoration: none;
+
+    color: #FFFFFF;
+}
+
+nav {
+    position: absolute;
+    width: 480px; /* i've changed the size */
+    height: 22px;
+    left: 50px;
+    top: 129px;
+    display: flex;
+    align-items: center;
+    line-height: 17px;
+}
+
+
+nav a {
+    float: left;
+    padding: 12px;
+    width: 20%;
+    text-align: center;
+    font-family: Lato;
+    font-style: normal;
+    /* font-weight: bold; */
+    font-size: 14px;
+    text-transform: uppercase;
+    text-decoration: none;
+
+    color: #FFFFFF;
+}
+nav a:hover {
+    font-weight: bold;
+}
+
+.mainImg {
+    position: absolute;
+    width: 445px;
+    height: 311px;
+    left: 90px;
+    top: 196px;
+
+    background: url(.jpg), #C4C4C4;
+    border-radius: 15px;
+}
+
+#rec {
+    position: absolute;
+    width: 160px;
+    height: 50px;
+    left: 51px;
+    top: 552px;
+
+    background: white;
+    border-radius: 6px;
+}
+
+#signUp {
+    font-family: Lato;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    /* identical to box height */
+
+
+    padding-top: 17px;
+    padding-left: 52px;
+
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    background-color: transparent;
+
+    color: #ED4C5C;
+}
+
+.threePictures {
+    position: absolute;
+    width: 1440px;
+    height: 657px;
+    left: 0px;
+    top: 657px;
+}
+
+.threePictures h1 {
+    width: 445px;
+    height: 89px;
+    padding-left: 50px;
+    padding-top: 56px;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 43px;
+
+    color: #000000;
+}
+
+.threePictures p {
+    position: absolute;
+    width: 445px;
+    height: 83px;
+    padding-left: 50px;
+    padding-top: 30px; 
+    
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 140%;
+    
+    text-align: justify;
+    
+    color: #000000;
+     
+}
+
+.threePictures a {
+    position: absolute;
+    width: 100px;
+    height: 26.28px;
+    padding-left: 50px;
+    padding-top: 133px;
+
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 140%;
+    text-decoration: none;
+    
+
+    text-align: justify;
+
+    color: #ED4C5C;
+}
+
+#card1 {
+    position: absolute;
+    left: 50px;
+    top: 345px;
+}
+#card2 {
+    position: absolute;
+    left: 430px;
+    top: 345px;
+}
+#card3 {
+    position: absolute;
+    left: 810px;
+    top: 345px;
+}
+
+
+.card {
+    /* position: absolute; */
+    width: 350px;
+    height: 248.86px;
+
+
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbkC2KWYXGKQrPp5Ge6rQ_5af9S7wx7C1PZqegB7vO0SNLRcyCUIsVXhtf9QIhC2B8jD4&usqp=CAU");
+    background-size: cover;
+    border-radius: 8px;
+}
+
+.card h3 {
+    
+    position: absolute;
+    height: 27px;
+    left: 60px;
+    top: 12px;
+
+    font-family: Lato;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+
+    color: #ED4C5C;
+
+}
+
+#recCard {
+    position: absolute;
+    width: 352px;
+    margin-left: -1px;
+    height: 40px;
+    top: 209px;
+
+    background: #FFFFFF;
+    box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+
+.techSection {
+    position: absolute;
+    width: 1440px;
+    height: 657px;
+    left: 0px;
+    top: 1314px;
+
+    background: #F5F4F4;
+}
+
+.techSection h1 {
+    position: absolute;
+    width: 300px;
+    height: 47px;
+    left: 50px;
+    top: 57px;
+
+    font-family: Lato;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 43px;
+
+    color: #000000;
+}
+
+.group2 {
+    position: absolute;
+    width: 1110px;
+    height: 226px;
+    left: 50px;
+    top: 160px;
+}
+
+.techCard {
+    width: 255px;
+    height: 226px;  
+    background-color: white;
+}
+
+.techCard img {
+    position: absolute;
+    width: 70px;
+    height: 46.88px;
+    left: 92px;
+    top: 71px;
+
+background: #FFFFFF;
+}
+.techCard h2 {
+    position: absolute;
+    left: 71px;
+    top: 139px;
+    
+    font-family: Lato;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 22px;
+    /* identical to box height */
+    
+    text-align: center;
+    
+    color: #101010;
+}
+.techCard p {
+    position: absolute;
+    width: 191px;
+    height: 51px;
+    left: 34px;
+    top: 171px;
+
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+    text-align: center;
+
+    color: #000000;
+}
+
+#techCard1 {
+    position: absolute;
+    left: 50px;
+}
+#techCard2 {
+    position: absolute;
+    left: 335px;
+}
+#techCard3 {
+    position: absolute;
+    left: 620px;
+}
+#techCard4 {
+    position: absolute;
+    left: 905px;
+}
+
+
+footer {
+    position: absolute;
+    width: 1440px;
+    height: 80px;
+    left: 0px;
+    top: 1971px;
+    background: #ED4C5C;
+}
+
+footer a {
+    width: 33%;
+}
+
+.appLinks {
+    position: absolute;
+    display:flex;
+    width: 134px;
+    height: 32px;
+    left: 50px;
+    top: 29px;
+}
+
+footer h2 {
+    position: absolute;
+    width: 310px;
+    height: 28px;
+    left: 264px;
+    top: 29px;
+
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 29px;
+
+    color: #FFFFFF;
+}
