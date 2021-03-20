@@ -12,7 +12,7 @@
 }
 
 #logoImg {
-    width: 40px;
+    width: 29px;
 }
 
 header {
@@ -197,10 +197,39 @@ nav a:hover {
     height: 248.86px;
 
 
-    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbkC2KWYXGKQrPp5Ge6rQ_5af9S7wx7C1PZqegB7vO0SNLRcyCUIsVXhtf9QIhC2B8jD4&usqp=CAU");
-    background-size: cover;
+    /* background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbkC2KWYXGKQrPp5Ge6rQ_5af9S7wx7C1PZqegB7vO0SNLRcyCUIsVXhtf9QIhC2B8jD4&usqp=CAU"); */
+    /* background-size: cover; */
     border-radius: 8px;
 }
+
+.card img {
+    width: 350px;
+    height: 248.86px;
+    border-radius: 8px;
+    left: 50px;
+    top: 345px;
+
+}
+
+/* .cardNew a {
+    
+    position: absolute;
+    height: 27px;
+    left: 60px;
+    top: 12px;
+
+    font-family: Lato;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+
+    text-decoration: none;
+
+    color: #ED4C5C;
+
+} */
 
 .card a {
     
@@ -272,20 +301,24 @@ nav a:hover {
     width: 255px;
     height: 226px;  
     background-color: white;
+    justify-content: center;
+    display: flex;
+
 }
 
 .techCard img {
     position: absolute;
-    width: 70px;
-    height: 46.88px;
-    left: 92px;
-    top: 71px;
+    width: 60px;
+    /* height: 46.88px; */
+    /* justify-content: center; */
+    left: 97.5px;
+    top: 65px;
 
 background: #FFFFFF;
 }
 .techCard h2 {
     position: absolute;
-    left: 71px;
+    /* left: 71px; */
     top: 139px;
     
     font-family: Lato;
@@ -328,6 +361,12 @@ background: #FFFFFF;
     position: absolute;
     left: 620px;
 }
+
+#techCard3 {
+    position: absolute;
+    left: 620px;
+}
+
 #techCard4 {
     position: absolute;
     left: 905px;
