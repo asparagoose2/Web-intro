@@ -67,17 +67,17 @@ nav a {
     color: #FFFFFF;
 }
 nav a:hover {
-    font-weight: bold;
+    color: #5e5e5e;
 }
 
 .mainImg {
     position: absolute;
-    width: 445px;
-    height: 311px;
+    /* width: 445px; */
+    /* height: 311px; */
     left: 90px;
     top: 196px;
 
-    background: #C4C4C4;
+    /* background: #C4C4C4; */
     border-radius: 15px;
 }
 
@@ -107,6 +107,7 @@ nav a:hover {
     display: flex;
     align-items: center;
     text-transform: uppercase;
+    text-decoration: none;
     background-color: transparent;
 
     color: #ED4C5C;
@@ -153,12 +154,12 @@ nav a:hover {
      
 }
 
-.threePictures a {
+#learnMore {
     position: absolute;
     width: 100px;
     height: 26.28px;
-    padding-left: 50px;
-    padding-top: 133px;
+    left: 50px;
+    top: 278px;
 
     font-family: Lato;
     font-style: normal;
@@ -201,7 +202,7 @@ nav a:hover {
     border-radius: 8px;
 }
 
-.card h3 {
+.card a {
     
     position: absolute;
     height: 27px;
@@ -214,6 +215,8 @@ nav a:hover {
     font-size: 14px;
     line-height: 17px;
     text-align: center;
+
+    text-decoration: none;
 
     color: #ED4C5C;
 
@@ -352,7 +355,7 @@ footer {
 
 footer h2 {
     position: absolute;
-    width: 310px;
+    /* width: 310px; */
     height: 28px;
     left: 264px;
     top: 29px;
@@ -364,4 +367,8 @@ footer h2 {
     line-height: 29px;
 
     color: #FFFFFF;
+}
+footer a {
+    width: 28px;
+    fill: white;
 }
