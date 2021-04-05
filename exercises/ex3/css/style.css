@@ -1,0 +1,124 @@
+@viewport {
+	width:480px;
+	zoom:1;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    
+}
+
+header {
+    height: 192px;
+    background-image: url("http://se.shenkar.ac.il/teach/web1/2021/logo.png");
+    background-color: #d6d6d6;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 76px;
+}
+
+.layout1nav{
+    height: 62px;
+}
+.layout1nav li {
+    float: left;
+}
+
+nav {
+    background: black;
+    display: flex;
+    align-items: center;
+}
+
+nav ul {
+    padding-left: 40px;
+    padding-top: 11px;
+    list-style-type: none;
+}
+
+nav li {
+    width: 235px;
+    height: 40px;
+}
+
+nav a {
+    /* float: left; */
+    /* padding: 12px; */
+    /* width: 20%; */
+    display: block;
+    padding: 8px;
+    /* background-color: #dddddd; */
+    color: #e9e9e9;
+    text-align: center;
+    font-family: Lato;
+    font-style: normal;
+    font-size: 15px;
+    text-decoration: none;
+}
+
+.selected {
+    background: #2f96b4;
+}
+
+nav a:hover {
+    background: #065e79;
+}
+#wrapper {
+    margin: 0px auto;
+    max-width: 1000px;
+}
+
+main {
+    float: left;
+    height: 696px;
+    width: 75%;
+    background: #ffffff;
+}
+
+#first {
+    margin-left: 40px;
+    margin-top: 24px;
+}
+#second {
+    margin-left: 496px;
+    margin-top: 178px;
+}
+
+.squares {
+    height: 100px;
+    width: 100px;
+    background: #b94a48;
+}
+
+.wideRectangle {
+    height: 60px;
+    width: 150px;
+    margin-left: 80px;
+    margin-top: 200px;
+    background: #b94a48;
+}
+
+.mainContent {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 35px;
+
+    width: 235px;
+    height: 235px;
+}
+
+aside {
+    float: left;
+    height: 696px;
+    width: 25%;
+    background: #eeeeee;
+}
+
+footer {
+    height: 50px;
+    background: #d6d6d6;
+}
+#clear {
+    clear: both;
+}
