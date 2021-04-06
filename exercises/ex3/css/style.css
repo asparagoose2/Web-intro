@@ -45,7 +45,7 @@ header {
 .layout2nav{
     float: left;
     max-width: 146px;
-    height: 760px;
+    height: 1500px;
 }
 .layout2nav li{
     height: 60px;
@@ -98,7 +98,6 @@ main {
     float: left;
     height: 696px;
     width: 75%;
-    overflow: auto;
     background: #ffffff;
 }
 
@@ -133,16 +132,16 @@ main {
 }
 
 #one {
-    height: 325px;
+    height: 650px;
 }
 #two {
-    height: 250px;
+    height: 500px;
 }
 #three {
-    height: 412px;
+    height: 824px;
 }
 #four {
-    height: 363px;
+    height: 726px;
 }
 
 .mainContent {
@@ -165,7 +164,7 @@ main {
 
 #layout2Aside {
     float: left;
-    height: 760px;
+    height: 1500px;
     width: 30%;
     background: #eeeeee; 
 }
@@ -186,7 +185,7 @@ aside {
     width: 25%;
     background: #eeeeee;
 }
-
+/* 
 footer {
 
     position:absolute;
@@ -195,13 +194,16 @@ footer {
     right: 0;
     background: #d6d6d6;
     height: 50px;
+} */
 
-    /* position: fixed;
-    height: 50px; */
-    /* background: #d6d6d6; */
-    /* background: red;
+footer {
+
+    position:fixed;
     width: 100%;
-    clear: both; */
+    bottom:0;
+    right: 0;
+    background: #d6d6d6;
+    height: 50px;
 }
 #clear {
     clear: both;
