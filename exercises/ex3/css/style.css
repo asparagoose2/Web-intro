@@ -125,6 +125,7 @@ main {
 }
 
 .rectangle {
+    flex: none;
     width: 270px;
     margin-top: 24px;
     margin-left: 15px;
@@ -172,7 +173,7 @@ main {
 #layout2Main {
     float: left;
     width: 70%;
-    height: 760px;
+    height: 1500px;
 }
 .column {
     float: left;
