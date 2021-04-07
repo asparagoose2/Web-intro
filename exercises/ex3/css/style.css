@@ -186,8 +186,8 @@ aside {
     width: 25%;
     background: #eeeeee;
 }
-/* 
-footer {
+
+.footerFirst {
 
     position:absolute;
     bottom:0;
@@ -195,7 +195,7 @@ footer {
     right: 0;
     background: #d6d6d6;
     height: 50px;
-} */
+}
 
 footer {
 
