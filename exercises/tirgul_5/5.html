@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>2B - Javascript events </title>
+    <script src="scripts5.js"> </script>
+</head>
+
+<body>
+    <button id="btn">Click on me ! </button>
+    <button id="btn2">change color </button>
+    <h1 id="pageTitle">Our products</h1>
+    <script>
+        (function () { 
+            document.getElementById("btn").onclick = changeTitle
+            document.getElementById("btn2").onclick = changeColor
+        })();
+    </script>
+</body>
+
+</html>

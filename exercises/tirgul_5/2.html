@@ -1,0 +1,23 @@
+<!-- scopes -->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>1B - Javascript scopes</title>
+</head>
+
+<body>
+    <script>
+        var a = 8;
+        var b = 2;
+
+        (function () {
+            a = 10;
+            b = 5;
+            console.log('a + b = ', a + b);
+        })();
+
+        console.log('a = ' , a );
+        console.log('b = ', b);
+    </script>
+</body
