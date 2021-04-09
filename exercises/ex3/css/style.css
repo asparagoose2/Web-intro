@@ -22,13 +22,17 @@ header {
     height: 62px;
     padding-left: 40px;
     align-items: center;
-
 }
 .layout1nav li {
     float: left;
     text-align: center;
     height: 40px;
 
+}
+
+#nav3 {
+    padding-left: 0px;
+    justify-content: center;
 }
 
 .layout1nav a{
