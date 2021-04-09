@@ -29,7 +29,7 @@ toggleColor = function () {
         this.style.backgroundImage = "none";
     } else {
         this.style.background = "white";
-        this.style.backgroundImage = 'url("/images/success-kid.jpg")';
+        this.style.backgroundImage = 'url("images/success-kid.jpg")';
         this.style.backgroundRepeat = "no-repeat";
         this.style.backgroundPosition = "center";
     }
