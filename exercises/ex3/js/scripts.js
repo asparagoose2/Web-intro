@@ -38,7 +38,7 @@ makeRecElement = function(rec) {
 
 addRectangle = function() {
     makeRectangle();
-    document.getElementById("main3").appendChild(makeRecElement(rec));
+    document.getElementById("main3").appendChild(makeRecElement(rectangles.length-1));
 }
 
 renderRectangle = function() {
