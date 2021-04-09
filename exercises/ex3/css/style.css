@@ -33,8 +33,16 @@ header {
 
 #nav3 {
     padding-left: 0px;
+    
+}
+
+
+#nav3 ul {
+    width: 100%;
+    display: flex;
     justify-content: center;
 }
+
 
 
 
@@ -229,9 +237,19 @@ footer {
 
 
 .layout3rec {
-    width: 25%;
+    width: 250px;
     height: 400px;
     float: left;
+    background-image: none;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.showIMG {
+    background: white;
+    background-image: url("/images/success-kid.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 #recPlus {
@@ -239,6 +257,16 @@ footer {
     justify-content: center;
     align-items: center;
     display: flex;
+}
+
+.star {
+    width: 40px;
+    height: 30px;
+    float: right;
+    margin: 10px;
+    background-image: url("/images/star.svg");
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 #main3 {
