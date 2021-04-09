@@ -247,7 +247,7 @@ footer {
 
 .showIMG {
     background: white;
-    background-image: url("images/success-kid.jpg");
+    background-image: url("../images/success-kid.jpg");
     background-repeat: no-repeat;
     background-position: center;
 }
@@ -264,7 +264,7 @@ footer {
     height: 30px;
     float: right;
     margin: 10px;
-    background-image: url("images/star.svg");
+    background-image: url("../images/star.svg");
     background-repeat: no-repeat;
     background-position: center;
 }
