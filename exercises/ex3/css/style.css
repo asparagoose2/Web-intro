@@ -30,10 +30,13 @@ header {
 
 }
 
+
 #nav3 {
     padding-left: 0px;
     justify-content: center;
 }
+
+
 
 .layout1nav a{
     height: 40px;
@@ -105,6 +108,7 @@ main {
     background: #ffffff;
 }
 
+
 #first {
     margin-left: 40px;
     margin-top: 24px;
@@ -135,6 +139,8 @@ main {
     margin-left: 15px;
     background: #468847;
 }
+
+
 
 #one {
     height: 650px;
@@ -212,4 +218,29 @@ footer {
 }
 #clear {
     clear: both;
+}
+
+
+#plusBtm {
+    text-decoration: none;
+    font-size: 100px;
+    color: white;
+}
+
+
+.layout3rec {
+    width: 25%;
+    height: 400px;
+    float: left;
+}
+
+#recPlus {
+    background: #457B9D;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+#main3 {
+    width: 100%;
 }
