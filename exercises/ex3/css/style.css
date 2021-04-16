@@ -238,6 +238,7 @@ footer {
 
 .layout3rec {
     width: 333px;
+    /* max-width: 333px; */
     height: 400px;
     float: left;
     background-image: none;
@@ -271,4 +272,27 @@ footer {
 
 #main3 {
     width: 100%;
+    /* display: grid;
+    grid-template-columns: 33.33333% 33.33333% 33.33223%; */
 }
+
+/* @media only screen and (max-width: 660px) {
+    #main3 {
+        width: 100%;
+    }
+} */
+    /* #main3 {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+
+    .layout3rec {
+        max-width: 333px;
+        height: 400px;
+        float: left;
+        background-image: none;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+} */
