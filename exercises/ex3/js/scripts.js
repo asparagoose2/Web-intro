@@ -4,8 +4,9 @@ var colors = ["#E63946", "#E96A70", "#EC9A9A", "#EFCAC4", "#92c084", "#A8DADC", 
 var rectangles = [];
 var lastName = "duchovne";
 var counter = 0;
+var elem;
 
-makeRectangle = function() {   
+makeRectangle = function() {  
     rectangles[rectangles.length] = {
         "id": "rec" + counter++,
         "color": colors[Math.floor(Math.random() * colors.length)],
@@ -42,7 +43,7 @@ makeRecElement = function(rec) {
     x.className = "layout3rec";
     x.style.background = rectangles[rec]["color"];
     x.onclick = toggleColor;
-    if(!((rec+2)%3))
+    if(!((rec+1)%3))
     {
         var star = document.createElement("div");
         star.className = "star";
@@ -61,12 +62,26 @@ renderRectangle = function() {
     makeRectangles();
     for(rec in rectangles)
     {
-        document.getElementById("main3").appendChild(makeRecElement(rec));
+        if(rec == 0) {
+            console.log("here");
+            elem = document.createElement("div");
+            elem.id = "recPlus";
+            elem.className = "layout3rec";
+            elem.style.background = rectangles[rec]["color"];
+            document.getElementById("main3").appendChild(elem);
+            elem = document.createElement("a");
+            elem.id = "plusBtm";
+            elem.innerHTML = '+';
+            elem.onclick = addRectangle;
+            document.getElementById("recPlus").appendChild((elem))
+        } else {
+            document.getElementById("main3").appendChild(makeRecElement(rec));
+        }
     }
 }
 
 render = function() {
-    document.getElementById("recPlus").onclick = addRectangle;
+    // document.getElementById("recPlus").onclick = addRectangle;
     renderRectangle();
     
 }
