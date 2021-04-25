@@ -1,0 +1,11 @@
+
+.newProduct {
+    width: 30%;
+    margin: 60px auto;
+    color: chocolate;
+    font-family: "Open Sans"; 
+}
+
+.newProduct label {
+    color: black;
+}
