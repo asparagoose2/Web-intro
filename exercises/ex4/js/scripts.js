@@ -3,8 +3,19 @@ var sdegree = 0;
 var pos = 2000;
 var ang = 40;
 			
-		var doc = document;
+var doc = document;
 
+$(document).ready(function () {
+  $('#submitBtn').click(function() {
+    checked = $("input[type=checkbox]:checked").length;
+
+    if(!checked) {
+      alert("You must check at least one checkbox.");
+      return false;
+    }
+
+  });
+});
 moveText = function(possition) {
   let delta_y = Math.sin(Math.PI * ang / 180) * possition;
       $('.scroll-text').css({
@@ -56,7 +67,8 @@ moveText = function(possition) {
 			// cross-browser wheel delta
 			var e = window.event || e; // old IE support
 			var delta = Math.max(-1, Math.min(1, (e.wheelDelta || -e.detail)));
-			pos += delta*25;
+			// pos += delta*25;
+			pos += delta*320;
 			sdegree += 0.5 * delta;
 
       moveText(pos);
