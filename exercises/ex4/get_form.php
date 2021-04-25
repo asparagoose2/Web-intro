@@ -10,5 +10,7 @@
     <h1>New product added successfully!</h1>
     <h3>Name: <?php echo $_GET["name"] ?></h3>
     <h3>Color: <?php echo $_GET["color"] ?></h3>
+    <h3>Retail Price: <?php echo (($_GET["price"] + 12)*1.17) ?>$</h3>
+    <p><?php echo date("d/m/Y")?></p>
 </body>
 </html>
