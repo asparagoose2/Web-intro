@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500;700&display=swap');
+
+body {
+    background: rgb(20,20,20);
+    overflow: hidden;
+    font-family: 'Roboto';
+    
+    position: relative;
+}
+
+body::after {
+    content: '';
+    position: fixed;
+    top: 0;
+    width: 60%;
+    margin-left: 20%;
+    /* margin: 0 auto; */
+    height: 35%;
+    background: linear-gradient(180deg, rgb(0, 0, 0) 40%, rgba(0, 0, 0, 0) 100%);
+
+}
+
+.wrapper {
+    display: flex;
+    height: 100%;
+    width: 80%;
+    margin: 0 auto;
+    perspective: 450px;
+}
+
+.starWarsInput {
+    border: none;
+    border-bottom: 2px dashed #ffc909;
+    background: none;
+    /* height: 4vw; */
+    font-size: 4vw;
+    color: #ffc909;
+    min-width: 8vw;
+    text-align: center;
+}
+
+.starWarsInput:focus {
+    outline: none;
+}
+
+.starWarsInputSelect {
+    border: none;
+    border-bottom: 2px dashed #ffc909;
+    background: none;
+    font-size: 4vw;
+    color: #ffc909;
+    /* width: 50vw; */
+}
+.starWarsInputSelect:focus {
+    outline: none;
+}
+.scroll-text {
+    color: #ffc909;
+    font-size: 4vw;
+    line-height: 1.5em;
+    font-weight: bold;
+    text-align: justify;
+    position: relative;
+    visibility: hidden;
+    margin: 50% 0 0 0;
+    /* transform: rotateX(40deg) translateZ(1800px) translateY(1300px); */
+    /* animation: autoScroll 7s linear forwards;
+    animation-play-state: paused; */
+    /* height: 3000px; */
+}
+
+@keyframes autoScroll {
+    from {transform: rotateX(40deg) translateZ(1800px) translateY(1000px);}
+    to {transform: rotateX(40deg) translateZ(1800px) translateY(0px);}
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+#canvas {
+    position: absolute;
+    z-index: 1;
+    display: none;
+}
+
+#intro {
+    position: fixed;
+    padding: 10px;
+    bottom: 0;
+    right: 0;
+    top: 0;
+    left: 0;
+    color: #E7AE05;
+    -webkit-perspective: 60;
+    -webkit-perspective-origin: center 0;
+    -moz-perspective: 60px;
+    -moz-perspective-origin: center 0;
+    -o-perspective: 60;
+    -o-perspective-origin: center 0;
+    letter-spacing: 1px;
+    text-align: justify;
+    text-shadow: 0 0 1px #E7AE05;
+}
+
+
+
+.introLine {
+    --intro-width: 15em;
+  	width: var(--intro-width);
+      margin-left: -8em;
+    /* margin: 0 0 0 (var(--intro-width) / 2); */
+	font-size: 200%;
+	font-weight: 400;
+  	color: rgb(75, 213, 238);
+    opacity: 0;
+	animation: intro 6s ease-out 1s;
+    animation-play-state: paused;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+
+}
+.startBtn {
+    justify-content: center;
+    display: flex;
+    --intro-width: 10em;
+  	width: var(--intro-width);
+    margin-left: -5em;
+	font-size: 200%;
+	font-weight: 400;
+    position: fixed;
+    top: 60%;
+    left: 50%;
+    color: aliceblue;
+    
+}
+.startBtn a {
+    cursor: pointer;
+
+}
+
+@keyframes fade {
+    from {opacity: 100;}
+    to {opacity: 0;}
+}
+
+@keyframes intro {
+    0% {
+        opacity: 0;
+    }
+    20% {
+        opacity: 1;
+    }
+    90% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+/* Set the animation & hide the logo */
+.logo {    
+    position: absolute;
+    top: 35%;
+    left: 45%;
+    z-index: 1;
+    margin: auto;
+    animation: logo 9s ease-out 8.3s;
+    opacity: 0;
+    animation-play-state: paused;
+    visibility: hidden;
+}
+
+.logo img {
+    width: inherit;
+}
+
+
+@keyframes logo {
+    0% {
+        width: 18em;        
+        transform: scale(2.75);
+        opacity: 1;
+    }
+    50% {
+        opacity: 1;
+        width: 18em;      
+    }
+    100% {
+        opacity: 0;
+        transform: scale(0.1);
+        width: 18em;
+    }
+}
+
+option {
+    font-size: 1.5vw;
+    color: black;
+}
+
+#muteBtn {
+    position: fixed;
+    top: 85%;
+    right: -10%;
+    width: 80px;
+    visibility: hidden;
+}

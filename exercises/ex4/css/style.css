@@ -6,3 +6,153 @@
 form {
     width: 400px;
 }
+
+@font-face {
+    font-family: "starwars";
+    src: url(/fonts/starwars.ttf);
+}
+
+h1 {
+    font-family: "starwars", sans-serif;
+    color: #ffd54e;
+    z-index: 2;
+}
+
+.myform {
+    overflow-x: hidden;
+    margin-top: 20px;
+    margin-bottom: 0;
+    width: 97%;
+    color: #ffd54e;
+    word-break: break-word;
+    letter-spacing: .05em;
+    font-size: 18px;
+    padding: .3em;
+    outline: 0;
+    border: 3px solid rgba(255, 213, 78, 0.2);
+    border-radius: 3px;
+    background-color: #080808;
+    transition: border-color .3s ease-out;
+}
+
+
+/* ============================================================================================== 
+SED Innovations
+https://sed.am
+https://mkrtchyan.ga
+================================================================================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@keyframes move-twink-back {
+    from {
+        background-position: 0 0;
+    }
+    to {
+        background-position: -10000px 5000px;
+    }
+}
+
+@-webkit-keyframes move-twink-back {
+    from {
+        background-position: 0 0;
+    }
+    to {
+        background-position: -10000px 5000px;
+    }
+}
+
+@-moz-keyframes move-twink-back {
+    from {
+        background-position: 0 0;
+    }
+    to {
+        background-position: -10000px 5000px;
+    }
+}
+
+@-ms-keyframes move-twink-back {
+    from {
+        background-position: 0 0;
+    }
+    to {
+        background-position: -10000px 5000px;
+    }
+}
+
+@keyframes move-clouds-back {
+    from {
+        background-position: 0 0;
+    }
+    to {
+        background-position: 10000px 0;
+    }
+}
+
+@-webkit-keyframes move-clouds-back {
+    from {
+        background-position: 0 0;
+    }
+    to {
+        background-position: 10000px 0;
+    }
+}
+
+@-moz-keyframes move-clouds-back {
+    from {
+        background-position: 0 0;
+    }
+    to {
+        background-position: 10000px 0;
+    }
+}
+
+@-ms-keyframes move-clouds-back {
+    from {
+        background-position: 0;
+    }
+    to {
+        background-position: 10000px 0;
+    }
+}
+
+.stars,
+.twinkling,
+.clouds {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.stars {
+    background: #000 url(http://www.script-tutorials.com/demos/360/images/stars.png) repeat top center;
+    z-index: 0;
+}
+
+.twinkling {
+    background: transparent url(http://www.script-tutorials.com/demos/360/images/twinkling.png) repeat top center;
+    z-index: 1;
+    -moz-animation: move-twink-back 200s linear infinite;
+    -ms-animation: move-twink-back 200s linear infinite;
+    -o-animation: move-twink-back 200s linear infinite;
+    -webkit-animation: move-twink-back 200s linear infinite;
+    animation: move-twink-back 200s linear infinite;
+}
+
+.clouds {
+    background: transparent url(http://www.script-tutorials.com/demos/360/images/clouds3.png) repeat top center;
+    z-index: 3;
+    -moz-animation: move-clouds-back 200s linear infinite;
+    -ms-animation: move-clouds-back 200s linear infinite;
+    -o-animation: move-clouds-back 200s linear infinite;
+    -webkit-animation: move-clouds-back 200s linear infinite;
+    animation: move-clouds-back 200s linear infinite;
+}

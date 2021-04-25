@@ -1,0 +1,45 @@
+<html lang="en">
+<head>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="a.css">
+  <title>Document</title>
+</head>
+<body>
+    <article class="starwars">
+        <audio preload="auto">
+          <!-- <source src="https://s.cdpn.io/1202/Star_Wars_original_opening_crawl_1977.ogg" type="audio/ogg" /> -->
+          <!-- <source src="https://s.cdpn.io/1202/Star_Wars_original_opening_crawl_1977.mp3" type="audio/mpeg" /> -->
+          <source src="/sound/crawl.mp3" type="audio/mpeg" />
+    </audio>
+    <canvas id="canvas"></canvas>
+    <div id="intro"></div>
+    <div class="wrapper">
+        <section class="introLine">
+            A long time ago, in a galaxy far,<br> far away....
+        </section>
+        <section class="logo">
+            <img src="/LOGO.svg" alt="">
+        </section>
+        <section class="startBtn">
+            <a>click here</a>
+        </section>
+        <div class="scroll-text" style="height: 8000px;">
+            <h1>STAR WARS</h1>
+            <h2>Scrolling text Effect</h2>
+            <p>War! The Republic is crumbling under attacks by the ruthless Sith Lord, <input class="starWarsInput" type="text"> . There are heroes on both sides.</p>
+            <p>Evil is <select class="starWarsInputSelect">
+                <option value="everywhere">everywhere</option>
+                <option value="nowhere">nowhere</option>
+                <option value="taking over">taking over</option>
+                <option value="about to win">about to win</option>
+            </select>, and <input type="tel" class="starWarsInput"> planets are in immediate danger! In a stunning move, the fiendish droid leader, General Grievous, has swept into the Republic capital with this stolen key <input class="starWarsInput" type="password"> and kidnapped Chancellor Palpatine, leader of the Galactic Senate.</p>
+            <p>As the Separatist Droid Army attempts to flee the besieged capital with their valuable hostage, <input type="number" class="starWarsInput" min="2"> Jedi Knights lead a desperate mission to rescue the captive Chancellor...</p>
+            
+        </div>
+        <a href="#"><img src="/soundOn.svg" alt="mute" id="muteBtn"></a>
+    </div>
+    <script src="/script.js"></script>
+</body>
+</html>

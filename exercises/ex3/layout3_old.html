@@ -1,0 +1,39 @@
+<!-- 
+    when in mobile, i see only one req per page
+    how can i add an element with style and then overwrite it with CSS?  
+    is it leagal to add element with this method? practiclly it is inline css
+ -->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/style.css">
+    <link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <script src="js/scripts.js"> </script>
+    <title>Ofir - Layout 3</title>
+</head>
+
+<body>
+    <div id="wrapper">
+        <header></header>
+        <nav class="layout1nav" id="nav3" >
+            <ul >
+                <li><a href="index.html" >Layout 1</a></li>
+                <li><a href="layout2.html">Layout 2</a></li>
+                <li class="selected"><a href="layout3.html">Layout 3</a></li>
+            </ul>
+        </nav>
+        <main id="main3">
+            <!-- <div id="recPlus" class="layout3rec"><a href="#" id="plusBtm">+</a></div> -->
+        </main >
+        <footer></footer>
+    </div>
+
+</body>
+<script>render()</script>
+</html>

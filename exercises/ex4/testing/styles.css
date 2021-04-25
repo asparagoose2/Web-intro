@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500;700&display=swap');
+
+body {
+    background: rgb(20,20,20);
+    overflow: hidden;
+    font-family: 'Roboto';
+    margin: 50% 0 0 0;
+    position: relative;
+}
+
+.wrapper {
+    display: flex;
+    height: 100%;
+    width: 80%;
+    margin: 0 auto;
+    perspective: 450px;
+}
+
+body::after {
+    content: '';
+    position: fixed;
+    top: 0;
+    width: 50%;
+    margin-left: 25%;
+    /* margin: 0 auto; */
+    height: 50%;
+    background: linear-gradient(180deg, rgb(0, 0, 0) 40%, rgba(0, 0, 0, 0) 100%);
+
+}
+
+.intro {
+    /* position: fixed; */
+    z-index: 0;
+    
+}
+
+.scroll-text {
+    color: #ffc909;
+    font-size: 4vw;
+    line-height: 1.5em;
+    font-weight: bold;
+    text-align: justify;
+    position: relative;
+
+    z-index: 10;
+    
+    /* animation: scroll 60s linear forwards; */
+    /* animation-play-state: paused;
+  animation-delay: calc(var(--scroll) * -1s); */
+}
+
+
+
+h1, h2 {
+    text-align: center;
+}
+
+/* @keyframes scroll {
+    from {top: 0; transform: translateZ(0px) rotateX(20deg);}
+    to { top: -7500px; transform: translateZ(-2500px) rotateX(21deg);}
+}
+@keyframes scroll2 {
+    from {transform: translateZ(0px) rotateX(20deg);}
+    to {transform: translateZ(-2500px) rotateX(21deg);}
+} */
+
+
+
+#canvas {
+    position: absolute;
+    z-index: 1;
+    display: none;
+}
+
+#intro {
+    position: fixed;
+    padding: 10px;
+    bottom: 0;
+    right: 0;
+    top: 0;
+    left: 0;
+    color: #E7AE05;
+    -webkit-perspective: 60;
+    -webkit-perspective-origin: center 0;
+    -moz-perspective: 60px;
+    -moz-perspective-origin: center 0;
+    -o-perspective: 60;
+    -o-perspective-origin: center 0;
+    letter-spacing: 1px;
+    text-align: justify;
+    text-shadow: 0 0 1px #E7AE05;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,314 @@
+@viewport {
+    width: 480px;
+    zoom: 1;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+header {
+    height: 192px;
+    background-image: url("http://se.shenkar.ac.il/teach/web1/2021/logo.png");
+    background-color: #d6d6d6;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 76px;
+    grid-column-start: 1;
+    grid-column-end: end;
+}
+
+.layout1nav {
+    height: 62px;
+    /* width: 1000px; */
+    /* padding-left: 40px; */
+    display: grid;
+    grid-template-columns: auto 750px 250px auto;
+    align-items: center;
+    grid-column-start: 1;
+    grid-column-end: end;
+}
+
+.layout1nav li {
+    float: left;
+    text-align: center;
+    height: 40px;
+}
+
+#nav3 {
+    padding-left: 0px;
+}
+
+#nav3 ul {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.layout1nav ul {
+    padding-left: 40px;
+    /* margin-left: 25%; */
+    grid-column-start: 2;
+}
+
+.layout1nav a {
+    height: 40px;
+    line-height: 40px;
+}
+
+.pageContent {
+    float: left;
+    /* width: 854px; */
+    height: 760px;
+    display: grid;
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-template-columns: 146px 256px 598px;
+}
+
+.layout2nav {
+    /* float: left; */
+    max-width: 146px;
+    height: 1500px;
+    grid-column-start: 1;
+}
+
+.layout2nav li {
+    height: 60px;
+}
+
+.layout2nav a {
+    height: 44px;
+    line-height: 44px;
+    padding: 8px;
+}
+
+nav {
+    background: black;
+    display: flex;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav li {
+    width: 235px;
+    height: 40px;
+}
+
+nav a {
+    display: block;
+    color: #e9e9e9;
+    font-family: Lato;
+    font-style: normal;
+    font-size: 15px;
+    text-decoration: none;
+}
+
+.selected {
+    background: #2f96b4;
+}
+
+nav li:hover {
+    background: #34c5f1;
+}
+
+#wrapper {
+    margin: 0px auto;
+    /* max-width: 1000px; */
+    width: 100%;
+    /* height: 1000px; */
+    /* justify-content: center;
+    display: flex; */
+    display: grid;
+    grid-template-columns: auto 750px 250px;
+    grid-template-rows: auto auto auto auto;
+    position: relative;
+}
+
+main {
+    /* float: left; */
+    height: 696px;
+    width: 750px;
+    background: #ffffff;
+    grid-column-start: 2;
+}
+
+#first {
+    margin-left: 40px;
+    margin-top: 24px;
+}
+
+#second {
+    margin-left: 496px;
+    margin-top: 178px;
+}
+
+.squares {
+    height: 100px;
+    width: 100px;
+    background: #b94a48;
+}
+
+.wideRectangle {
+    height: 60px;
+    width: 150px;
+    margin-left: 80px;
+    margin-top: 200px;
+    background: #b94a48;
+}
+
+.rectangle {
+    flex: none;
+    /* width: 270px; */
+    margin-top: 24px;
+    margin-left: 15px;
+    background: #468847;
+}
+
+#one {
+    height: 650px;
+}
+
+#two {
+    height: 500px;
+}
+
+#three {
+    height: 824px;
+}
+
+#four {
+    height: 726px;
+}
+
+.mainContent {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 35px;
+    width: 235px;
+    height: 235px;
+}
+
+#layout2 {
+    padding-top: 511px;
+    padding-left: 6px;
+}
+
+#layout2 div {
+    background: #468847;
+}
+
+#layout2Aside {
+    /* float: left; */
+    height: 1500px;
+    /* width: 30%; */
+    background: #eeeeee;
+}
+
+#layout2Main {
+    /* float: left; */
+    /* width: 70%; */
+    grid-column-start: 3;
+    height: 1500px;
+}
+
+.column {
+    float: left;
+    width: 50%;
+}
+
+aside {
+    float: left;
+    height: 696px;
+    width: 250px;
+    background: #eeeeee;
+}
+
+.footerFirst {
+    position: relative;
+    grid-column-start: 1;
+    grid-column-end: end;
+    background: #d6d6d6;
+    height: 50px;
+}
+
+footer {
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    right: 0;
+    background: #d6d6d6;
+    height: 50px;
+}
+
+#clear {
+    clear: both;
+}
+
+#plusBtm {
+    text-decoration: none;
+    font-size: 100px;
+    color: white;
+}
+
+.layout3rec {
+    width: 333px;
+    /* max-width: 333px; */
+    height: 400px;
+    float: left;
+    background-image: none;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.showIMG {
+    background: white;
+    background-image: url("../images/success-kid.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#recPlus {
+    background: #457B9D;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.star {
+    width: 40px;
+    height: 30px;
+    float: right;
+    margin: 10px;
+    background-image: url("../images/star.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#main3 {
+    width: 1000px;
+    grid-column-start: 2;
+    grid-column-end: 4;
+    display: block;
+    /* display: flex; */
+    /* flex-wrap: wrap; */
+    /* display: grid;
+    grid-template-columns: 33.33333% 33.33333% 33.33223%; */
+}
+
+@media only screen and (max-width: 1000px) {
+    #main3 {
+        width: 100%;
+        grid-column-start: 1;
+        grid-column-end: end;
+        justify-self: center;
+        /* display: grid;
+        grid-template-columns: auto auto;  */
+    }
+    .layout3rec {
+        width: 500px;
+    }
+}
