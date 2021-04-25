@@ -10,6 +10,6 @@
     <h1>New product added successfully!</h1>
     <h3>Name: <?php echo $_GET["name"] ?></h3>
     <h3>Retail Price: <?php echo (($_GET["price"] + 12)*1.17) ?>$</h3>
-    <h3>Date added:<?php echo date("d/m/Y")?></h3>
+    <h3>Date added: <?php echo date("d/m/Y")?></h3>
 </body>
 </html>
