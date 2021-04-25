@@ -8,7 +8,7 @@
 </head>
 <body>
     <h1>New product added successfully!</h1>
-    <h3>Name: <?php echo $_GET("name") ?></h3>
-    <h3>Color: <?php echo $_GET("color") ?></h3>
+    <h3>Name: <?php echo $_GET["name"] ?></h3>
+    <h3>Color: <?php echo $_GET["color"] ?></h3>
 </body>
 </html>
