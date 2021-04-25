@@ -25,10 +25,10 @@ moveText = function(possition) {
     document.getElementById("muteBtn").onclick = function() {
       
       if(!document.getElementsByTagName("audio")[0].paused) {
-        this.src = "../images/mute.svg";
+        this.src = "images/mute.svg";
         document.getElementsByTagName("audio")[0].pause();
       } else {
-        this.src = "../images/soundOn.svg";
+        this.src = "images/soundOn.svg";
         document.getElementsByTagName("audio")[0].play();
       }
     };
