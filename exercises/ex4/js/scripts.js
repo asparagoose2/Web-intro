@@ -67,8 +67,8 @@ moveText = function(possition) {
 			// cross-browser wheel delta
 			var e = window.event || e; // old IE support
 			var delta = Math.max(-1, Math.min(1, (e.wheelDelta || -e.detail)));
-			// pos += delta*25;
-			pos += delta*320;
+			pos += delta*35;
+			// pos += delta*320;
 			sdegree += 0.5 * delta;
 
       moveText(pos);
