@@ -207,3 +207,121 @@ option {
     width: 80px;
     visibility: hidden;
 }
+
+
+#submitBtn {
+    font-family: "starwars";
+    cursor: pointer;
+    border: none;
+    letter-spacing: 4px;
+}
+#submitBtn:hover {
+    text-shadow: 0 6px 6px #fde383;
+}
+#submitBtn:disabled {
+    text-shadow: 0 6px 6px #fd83de;
+}
+
+
+/* The container */
+.container {
+    /* display: block; */
+    position: relative;
+    padding-left: 35px;
+    margin-right: 45px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 2.8vw;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  /* Hide the browser's default checkbox */
+  .container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  /* Create a custom checkbox */
+  .checkmark {
+    transition: 1500ms;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 60px;
+    width: 40px;
+    background-color: rgb(88, 88, 88);
+  }
+  
+  /* On mouse-over, add a grey background color */
+  .container:hover input ~ .checkmark {
+    background-color: #ccc;
+  }
+  
+  /* When the checkbox is checked, add a blue background */
+  .container input:checked ~ .checkmark {
+    background: rgb(135,220,90);
+    background: -webkit-linear-gradient(left, rgb(135,220,90) 10%,rgb(254,254,254) 30%,rgb(254,254,254) 50%,rgb(254,254,254) 60%,rgb(135,220,90) 100%);
+    animation-name: glow;
+    animation-iteration-count: infinite;
+    animation-duration: 2s;
+ }
+  
+ @keyframes glow {
+	from { box-shadow: 0 0 10px #7EC855; }
+	50% { box-shadow: 0 0 20px #7EC855; }
+	to { box-shadow: 0 0 10px #7EC855; }
+}
+
+  /* Create the checkmark/indicator (hidden when not checked) */
+  .checkmark:after {
+    transition: 3000ms;
+    content: "";
+    position: absolute;
+    display: none;
+  }
+
+  .textArea {
+    min-width: 75vw;
+    background: none;
+    border: 2px dashed #ffc909;
+    font-size: 3vw;
+    color: #ffc909;
+  }
+.textArea:focus {
+    outline: none;
+}
+
+/* .starWarsRadio {
+    background: cadetblue;
+} */
+.starWarsRange {
+    -webkit-appearance: none;  
+    appearance: none;
+    width: 16vw;
+    height: 2vw; 
+    background: #ffffffa1; 
+    outline: none; 
+    border-radius: 10px;
+    /* opacity: 0.5;  */
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+  }
+
+.starWarsRange::-webkit-slider-thumb {
+    -webkit-appearance: none; 
+    appearance: none;
+    width: 70px; 
+    height: 70px; 
+    border-radius: 100px;
+    opacity: 1;
+    background: #ffffff; 
+    background: -webkit-radial-gradient(#ffffff,#00ff1d);
+    box-shadow: 0px 0px 60px chartreuse;
+    cursor: pointer; 
+  }
+  

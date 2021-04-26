@@ -4,12 +4,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/style.css">
-  <title>Ofir</title>
+  <title>Text Test</title>
 </head>
 <body>
     <!-- <article class="starwars"> -->
         <audio preload="auto">
-          <source src="sound/crawl.mp3" type="audio/mpeg"/>
+          <source src="/sound/crawl.mp3" type="audio/mpeg" />
         </audio>
     <!-- </article> -->
     <canvas id="canvas"></canvas>
@@ -19,27 +19,41 @@
             A long time ago, in a galaxy far,<br> far away....
         </section>
         <section class="logo">
-            <img src="images/LOGO.svg" alt="star wars logo">
+            <img src="/images/LOGO.svg" alt="star wars logo">
         </section>
         <section class="startBtn">
             <a>click here</a>
         </section>
         <div class="scroll-text" style="height: 8000px;">
             <form action="http://se.shenkar.ac.il/teach/web1/2021/get_form3.php" novalidate>
-                <h1>STAR WARS</h1>
-                <h2>Scrolling text Effect</h2>
-                <p>War! The Republic is crumbling under attacks by the ruthless Sith Lord, <input class="starWarsInput" type="text" name="fullName"> . There are heroes on both sides.</p>
-                <p>Evil is <select class="starWarsInputSelect" name="age">
+                <h2>Episode III</h2>
+                <h1>FORMS WAR</h1>
+                <p>War! The Republic is crumbling under attacks by the ruthless Sith Lord, <input class="starWarsInput" type="text" name="fullName" pattern="\w+\s\w+"> . There are heroes on both sides.</p>
+                <p>Evil is <select class="starWarsInputSelect" name="age" required>
                     <option value="everywhere">everywhere</option>
                     <option value="nowhere">nowhere</option>
                     <option value="taking over">taking over</option>
                     <option value="about to win">about to win</option>
-                </select>, and <input type="tel" class="starWarsInput" name="phone"> planets are in immediate danger! In a stunning move, the fiendish droid leader, General Grievous, has swept into the Republic capital with this stolen key <input class="starWarsInput" type="password" name="pass"> and kidnapped Chancellor Palpatine, leader of the Galactic Senate.</p>
+                </select>, and <input type="tel" minlength="9" pattern="[0-9]" maxlength="10" class="starWarsInput" name="phone"> planets are in immediate danger! In a stunning move, the fiendish droid leader, General Grievous, has swept into the Republic capital with this stolen key <input class="starWarsInput" type="password" name="pass" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"> and kidnapped Chancellor Palpatine, leader of the Galactic Senate.</p>
                 <p>As the Separatist Droid Army attempts to flee the besieged capital with their valuable hostage, <input type="number" class="starWarsInput" min="2" name="coffee"> Jedi Knights lead a desperate mission to rescue the captive Chancellor...</p>
+                <p>Meanwhile, other Jedi Knights: <br> 
+                    <label class="container"><input type="checkbox" class="form-check-input" name="interests[]" value="Yoda"> <span class="checkmark"></span></label>  Yoda <br>
+                    <label class="container"><input type="checkbox" class="form-check-input" name="interests[]" value="Luke Skywalker"> <span class="checkmark"></span></label>  Luke Skywalker <br>
+                    <label class="container"><input type="checkbox" class="form-check-input" name="interests[]" value="Obi Wan Kenobi"> <span class="checkmark"></span></label>  Obi Wan Kenobi <br>
+                    Decided to write a warning letter to <input class="starWarsInput" type="email" name="mail">. The message was, <br> <input name="address" type="starWarstextarea"  class="textArea">
+                </p>
+                <p>After the warning was sent, they wanted to catch up with the news on <input type="website" name="website" class="starWarsInput">. <br>
+                    The Panic level of the residents of the galactic federation is <input type="range" name="temper" class="starWarsRange">. <br>
+                    In order to calm them down they: <br>
+                    <label class="container"><input type="radio" class="form-check-input" name="gender" value="Put Jarjar on the televition"> <span class="checkmark"></span></label>Put Jarjar on the televition<br>
+                    <label class="container"><input type="radio" class="form-check-input" name="gender" value="Put princes leia on the televition"> <span class="checkmark"></span></label>  Put princes leia on the televition <br>
+
+                </p>
+                <button id="submitBtn" type="submit" class="starWarsInput">Submit</button>
             </form>
         </div>
-        <a href="#"><img src="images/soundOn.svg" alt="mute" id="muteBtn"></a>
+        <a href="#"><img src="/images/soundOn.svg" alt="mute" id="muteBtn"></a>
     </div>
-    <script src="js/scripts.js"></script>
+    <script src="/js/scripts.js"></script>
 </body>
 </html>
