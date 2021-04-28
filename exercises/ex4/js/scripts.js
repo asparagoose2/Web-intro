@@ -55,12 +55,12 @@ moveText = function(possition) {
       var id = setInterval(() => {
         moveText(pos);
         pos = pos-1;
-        if (pos <= 35) {
+        if (pos <= 450) {
           clearInterval(id);
         }
-      }, 10);
+      }, 8);
       document.getElementById("muteBtn").style.visibility = "visible";
-    }, 14000);
+    }, 8500);
   }
 		
 		function MouseWheelHandler(e) {
