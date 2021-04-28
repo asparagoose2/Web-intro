@@ -2,7 +2,7 @@
 
 @font-face {
     font-family: "starwars";
-    src: url(fonts/starwars.ttf);
+    src: url(../fonts/starwars.ttf);
 }
 
 body {
