@@ -2,7 +2,7 @@
 
 @font-face {
     font-family: "starwars";
-    src: url(fonts/starwars.ttf);
+    src: url(../fonts/starwars.ttf);
 }
 
 body {
@@ -138,6 +138,7 @@ h1, h2 {
     top: 60%;
     left: 50%;
     color: aliceblue;
+    z-index: 50;
     
 }
 .startBtn a {
@@ -165,11 +166,23 @@ h1, h2 {
     }
 }
 
+.logoDiv{
+    position: absolute;
+    background: transparent;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 /* Set the animation & hide the logo */
 .logo {    
-    position: absolute;
-    top: 35%;
-    left: 45%;
+    /* position: absolute; */
+    /* top: 50%; */
+    /* left: 50%; */
+    /* top: 35%;
+    left: 45%; */
     z-index: 1;
     margin: auto;
     animation: logo 9s ease-out 8.3s;
@@ -186,7 +199,8 @@ h1, h2 {
 @keyframes logo {
     0% {
         width: 18em;        
-        transform: scale(2.75);
+        /* transform: scale(2.75); */
+        transform: scale(3.75);
         opacity: 1;
     }
     50% {
